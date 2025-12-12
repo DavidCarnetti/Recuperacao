@@ -68,11 +68,21 @@ else if (escolha == 4) {
 
 // QUESTAO 5 //Se 5 -Peça a quantidade de termos da sequência de Fibonacci e imprima até esse termo.
 else if (escolha == 5) {
-    let termos = parseInt(prompt("Digite a quantidade de termos da sequência de Fibonacci:"));
-    let fibonacci = [0, 1];
-    for (let i = 2; i < termos; i++) {
-        fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+
+    let n = parseInt(prompt("Digite a quantidade de termos da sequência de Fibonacci que deseja ver:"));
+    let a = 0;
+    let b = 1;
+
+    for (let i = 1; i <= n; i++) {
+        alert(a);
+        let proximo = a + b;
+        a = b;
+        b = proximo;
+
+
     }
-    alert("Sequência de Fibonacci até " + termos + " termos: " + fibonacci.slice(0, termos).join(", "));
+
+
+
 
 }
